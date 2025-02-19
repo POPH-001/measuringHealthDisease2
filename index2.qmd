@@ -1,0 +1,196 @@
+---
+title: "Measuring Health and Disease in Populations II"
+subtitle: "Chapter 3 <br> Eric Delmelle <br> Feb 19 - Feb 24, 2025"
+format: revealjs
+---
+
+```{=html}
+<style>
+.circle {
+  background-color: #FFCCCB; /* Light red background */
+  border: 2px solid teal; /* Teal border */
+  border-radius: 50%; /* Makes the circle round */
+  color: teal; /* Teal text color */
+  width: 75px; /* Circle diameter */
+  height: 75px; /* Circle diameter */
+  display: inline-block;
+  text-align: center;
+  line-height: 75px; /* Match the height to center the text vertically */
+  vertical-align: middle; /* Aligns the circle vertically with adjacent text */
+  margin-right: 5px;
+}
+</style>
+```
+```{=html}
+<style>
+.highlight-box {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 5px;
+}
+</style>
+```
+```{=html}
+<style>
+ul {
+  font-size: 85%;
+}
+
+ul ul {
+  font-size: 75%;
+}
+</style>
+```
+![](imgs/ai.jpg){fig-align="center"}
+
+# [**Chapter Overview**]{style="color: blue;"}
+
+-   **Health Indicators and Indices**: What are their characteristics and why are they important?
+-   **Sources and Evaluation of Health Data**: Primary, secondary data, passive and active collection.
+-   **Disease Definition and Classification**: How do we classify diseases? (ICD9, ICD10-codes)
+-   **Diagnostic Tests and Disease Surveillance**: Is a test accurate? What about specificty and sensitivity? True Positive or False Negative?
+
+------------------------------------------------------------------------
+
+## [1]{.circle} [**Health Indicators and Indices**]{style="color: teal;"}
+
+-   **Health Indicators**: Directly measurable variables reflecting a population's health such as infant mortality rate and life expectancy.
+-   **Health Indices**: Composite measures combining multiple indicators to give an overview of health status, like the Human Development Index.
+
+![](imgs/index.jpg){fig-align="center" width="527"}
+
+-   See [**Box 3.1**]{.highlight-box} and [**Box 3.3**]{.highlight-box} for more details.
+
+------------------------------------------------------------------------
+
+### [**Evaluating Health Indicators**]{style="color: pink;"}
+
+-   How are health indicators used to monitor and assess population health, informing public health decisions and policy-making?
+
+::: columns
+::: {.column width="45%" style="font-size: 24px; line-height: 1.2;"}
+#### Essential Qualities {style="color: blue;"}
+
+-   **Reliability/Reproducibility**: Consistent results across studies and time.
+-   **Validity**: Accurately measures what it is intended to measure.
+-   **Sensitivity**: Detects changes or differences that are meaningful.
+:::
+
+::: {.column width="45%" style="font-size: 24px; line-height: 1.2;"}
+#### Practical Qualities {style="color: blue;"}
+
+-   **Acceptability**: Acceptable to those who are assessed by the indicator.
+-   **Feasibility**: Can be realistically collected and sustained.
+-   **Universality**: Applicable across different settings and populations.
+:::
+:::
+
+------------------------------------------------------------------------
+
+
+## [2]{.circle} [**Sources and quality of health data**]{style="color: teal;"}
+
+- See [**Table 3.1**]{.highlight-box} -sources of data to compilate indicators.
+- Health data sources are crucial for compiling health indicators.
+- Data can originate from individuals, healthcare providers, or be generated through health surveys and administrative databases.
+
+### [**Active or passive?**]{style="color: pink;"}
+- **Active Data Sources**: Require efforts to solicit and collect information, e.g., health surveys.
+- **Passive Data Sources**: Routinely submitted by other entities, e.g., vital statistics.
+
+------------------------------------------------------------------------
+
+### [**Primary and Secondary Data Sources**]{style="color: pink;"}
+- **Primary Data Sources**: Specifically collected for the purpose of health monitoring (e.g. disease registries and some health surveys).
+
+  - **Electronic Health Records (EHR)**: Detailed, real-time, patient-centered records.
+  - **Disease Registries**: Used to estimate disease incidence and prevalence, like cancer registries.
+
+- **Secondary Data Sources**: Originally designed for other purposes but also used in health monitoring (e.g.administrative databases for Medicare and Medicaid).
+
+
+
+------------------------------------------------------------------------
+
+### [**Health Information System (HIS)**]{style="color: pink;"}
+
+- An organized set of activities whose purpose is to **gather, maintain, and provide health-related information** to improve health outcomes.
+
+- Components:
+  - Disease registries
+  - Utilization databases
+  - National health surveys
+
+------------------------------------------------------------------------
+
+### [**Disease Registries and Notifiable Diseases**]{style="color: pink;"}
+
+- **Disease Registries**
+  - Important for estimating disease incidence and prevalence.
+  - Cover various conditions from cancer to communicable diseases.
+
+- **Notifiable Diseases**
+  - Diseases that must be reported to national health authorities.
+  - Managed by systems like the CDC's National Notifiable Diseases Surveillance System.
+  
+  
+------------------------------------------------------------------------
+
+### [**Utilization of Health Data**]{style="color: pink;"}
+
+
+- **Measuring Health Service Utilization**
+  - Utilization data from Medicare, Medicaid, and health maintenance organizations provide insights into health service use.
+
+- **Health Surveys**
+  - Gather data on health behaviors, practices, and perceptions.
+  - Vary by mode of interview and can be influenced by respondents’ perceptions and recall accuracy.
+  - See [**Table 3.2**]{.highlight-box} for pros and cons of survey type
+  - Cross-section (versus longitudinal)
+  - Likert scale!
+  - Self-rated survey
+    - Surprisingly good (dynamic)
+  - QOL - see the one for [Charlotte, NC](https://mcmap.org/qol/)
+
+------------------------------------------------------------------------
+
+### [**Linking health data**]{style="color: pink;"}
+
+- **Enhanced Insights**: Linking different data sources can provide a more comprehensive view of health outcomes.
+- **Examples of Linked Data**: Combining EHRs with national health surveys or insurance claim data.
+
+- **Data Challenges**
+  - **Data Integrity and Privacy**: Managing the accuracy and confidentiality of linked data is paramount. 
+    - <span style="color: red;">**HIPAA!**</span> 
+    - [List of HIPAA identifiers](https://biospecimens.cancer.gov/resources/sops/docs/GTEx_SOPs/BBRB-ER-0001-F1%20List%20of%20HIPAA%20Identifiers.pdf)
+  - **Analytical Complexity**: The use of linked data often requires advanced statistical techniques to manage biases and variability.
+
+------------------------------------------------------------------------
+
+
+## [3]{.circle} [**Summary measures of population health**]{style="color: teal;"}
+
+### [**Integrating Mortality and Morbidity**]{style="color: pink;"}
+- Health indices like DFLE, DALE, DALY, HALE, QALY, and HLY combine measures of mortality with morbidity or disability into a single comprehensive figure.
+- These measures differ in how they account for morbidity:
+  - Activities of daily living
+  - Self-rated health
+  - Activity limitations (institutional and non-institutional)
+
+
+------------------------------------------------------------------------
+
+### [**Quality-Adjusted Life Years (QALY)**]{style="color: pink;"}
+- **Definition**: A measure that combines the length of life with the quality of life in a single index number.
+- **Calculation**: Each year in perfect health is counted as one QALY, while years lived with illness or disability are adjusted according to the severity of the health condition.
+
+### [**Disability-Adjusted Life Years (DALY)**]{style="color: pink;"}
+- **Definition**: A measure that reflects the total number of years lost due to ill-health, disability, or early death.
+- **Calculation**: Sum of the years of life lost due to premature mortality and the years lost due to disability.
+
+
+
+------------------------------------------------------------------------
+
+
+![](imgs/survivalCurves.jpg){fig-align="center" width="527"}

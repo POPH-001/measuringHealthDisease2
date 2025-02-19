@@ -1,0 +1,159 @@
+---
+title: "Measuring Health and Disease in Populations"
+author: "Eric Delmelle"
+date: "February 19 2025"
+format: revealjs
+---
+
+## Introduction to Health Measurement
+
+- Understanding health indicators and indices
+- Evaluating sources of health data
+- Constructing summary measures of population health
+- Sensitivity and specificity in diagnostic tests
+- Disease surveillance and epidemic investigation
+- Cultural influences on health assessment
+
+**Add Figure Here: Diagram of Population Health Measurement Framework**
+
+---
+
+## Health Indicators vs. Indices
+
+- **Health Indicators**: Directly measurable variables reflecting a population's health
+- **Health Indices**: Composite measures combining multiple indicators
+- Example: Infant mortality rate (indicator) vs. Health expectancy index (index)
+
+---
+
+**Table: Common Health Indicators**
+| Indicator | Measurement |
+|-----------|-------------|
+| Life expectancy | Years of expected life |
+| Infant mortality rate | Deaths per 1,000 live births |
+| Disability-adjusted life years (DALYs) | Years lost due to ill-health |
+
+**Add Figure Here: Graph comparing different health indicators globally**
+
+**Reflection Question:** How do health indicators differ across developed and developing nations? What factors contribute to these differences?
+
+---
+
+## Evaluating Health Data Sources
+
+**Primary Data Sources**
+- Population surveys
+- Surveillance systems
+- Health care records
+
+**Secondary Data Sources**
+- Census data
+- Disease registries
+- Health administrative databases
+
+**Key Attributes of Reliable Data**
+1. **Validity**: Measures what it is supposed to measure
+2. **Reliability**: Consistent results across studies
+3. **Feasibility**: Can be collected efficiently
+4. **Universality**: Applies across different populations
+
+**Reflection Question:** What are some ethical concerns related to health data collection and privacy? How can we ensure data accuracy while respecting individual rights?
+
+---
+
+## Summary Measures of Population Health
+
+- **Quality-Adjusted Life Years (QALY)**: Adjusts life expectancy based on quality of health
+- **Disability-Adjusted Life Years (DALY)**: Measures disease burden combining morbidity and mortality
+- **Healthy Life Expectancy (HALE)**: Number of years a person can expect to live in full health
+
+**Add Figure Here: Flowchart of how DALY and QALY are calculated**
+
+**Reflection Question:** How do different measures like DALY and QALY help policymakers allocate healthcare resources?
+
+---
+
+## Sensitivity and Specificity in Screening
+
+- **Sensitivity**: Ability of a test to correctly identify those with the disease (True Positive Rate)
+- **Specificity**: Ability of a test to correctly identify those without the disease (True Negative Rate)
+- **Predictive Values**:
+  - Positive Predictive Value (PPV): Probability that a positive test result is accurate
+  - Negative Predictive Value (NPV): Probability that a negative test result is accurate
+
+**Add Figure Here: Confusion matrix for diagnostic tests**
+
+**Reflection Question:** What are some real-world examples of how inaccurate screening tests impact public health policies and individual health decisions?
+
+---
+
+## Disease Surveillance & Epidemic Investigation
+
+### Steps in Epidemic Investigation
+1. **Identify and confirm the outbreak**
+2. **Establish case definitions**
+3. **Conduct descriptive epidemiology**
+4. **Develop and test hypotheses**
+5. **Implement control and prevention measures**
+6. **Communicate findings**
+
+### Example: COVID-19 Surveillance
+- Tracking confirmed cases and mortality rates
+- Evaluating interventions such as lockdowns and vaccinations
+- Monitoring changes in variant strains
+
+**Add Figure Here: Graph of epidemic curve during past pandemics**
+
+**Reflection Question:** What lessons did we learn from COVID-19 in terms of global health surveillance and emergency response?
+
+---
+
+## Cultural and Social Considerations in Health Measurement
+
+- Different societies define health and disease differently
+- Traditional healing practices may influence data reporting
+- Perceptions of illness impact willingness to seek care
+- Example: Mental health stigma affecting diagnosis rates
+
+**Reflection Question:** How can cultural competence improve the accuracy of health data collection and interpretation?
+
+---
+
+## Ethical Considerations in Health Measurement
+
+- Privacy concerns in health data collection
+- Bias in health metrics (e.g., racial/ethnic disparities)
+- Ethical issues in screening and diagnosis (e.g., false positives leading to unnecessary treatment)
+
+**Reflection Question:** What are the responsibilities of researchers in ensuring fair and unbiased health measurements?
+
+---
+
+## The Role of AI & Big Data in Health Surveillance
+
+- AI in disease prediction and outbreak modeling
+- Electronic health records (EHR) for real-time data collection
+- Potential biases and ethical concerns in AI-driven health assessments
+
+**Add Figure Here: Diagram of AI applications in health data analysis**
+
+**Reflection Question:** How can AI help address health disparities, and what risks should we be cautious of?
+
+---
+
+## Conclusion
+
+- Measuring health and disease is foundational to public health planning
+- Data quality and reliability are crucial for decision-making
+- Cultural and social factors must be considered in health assessments
+- Continued advancements in health informatics enhance measurement accuracy
+
+**Final Reflection Questions:**
+1. What are the limitations of using DALY as a health measure?
+2. How can health indicators be used to inform public health policy?
+3. How does the specificity of a test impact public health decision-making?
+4. How can health measurement frameworks be adapted to better capture social determinants of health?
+
+---
+
+**Next Session: Epidemiologic Models and Determinants of Population Health**
