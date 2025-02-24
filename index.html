@@ -522,19 +522,238 @@ ul ul {
 
 <h3 id="quality-adjusted-life-years-qaly"><span style="color: pink;"><strong>Quality-Adjusted Life Years (QALY)</strong></span></h3>
 <ul>
-<li><strong>Definition</strong>: A measure that combines the length of life with the quality of life in a single index number.</li>
-<li><strong>Calculation</strong>: Each year in perfect health is counted as one QALY, while years lived with illness or disability are adjusted according to the severity of the health condition.</li>
-</ul>
-<h3 id="disability-adjusted-life-years-daly"><span style="color: pink;"><strong>Disability-Adjusted Life Years (DALY)</strong></span></h3>
-<ul>
-<li><strong>Definition</strong>: A measure that reflects the total number of years lost due to ill-health, disability, or early death.</li>
-<li><strong>Calculation</strong>: Sum of the years of life lost due to premature mortality and the years lost due to disability.</li>
+<li><p><strong>Definition</strong>: A measure that combines the length of life with the quality of life in a single index number.</p></li>
+<li><p><strong>Calculation</strong>: Each year in perfect health is counted as one QALY, while years lived with illness or disability are adjusted according to the severity of the health condition.</p></li>
 </ul>
 </section>
 <section class="slide level2">
 
+<h3 id="disability-adjusted-life-years-daly"><span style="color: pink;"><strong>Disability-Adjusted Life Years (DALY)</strong></span></h3>
+<ul>
+<li><strong>Definition of DALY</strong>: A measure that combines mortality (Years of Life Lost, YLL) and morbidity (Years Lived with Disability, YLD) into a single metric.</li>
+<li><strong>Why DALY Matters</strong>: Helps policymakers understand the burden of disease and prioritize interventions effectively.</li>
+<li><strong>Components of DALY</strong>:
+<ul>
+<li><strong>YLL (Years of Life Lost)</strong>: Premature death due to specific causes.</li>
+<li><strong>YLD (Years Lived with Disability)</strong>: The impact of non-fatal health conditions on quality of life.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
 
-<img data-src="imgs/survivalCurves.jpg" width="527" class="r-stretch quarto-figure-center"><div class="footer footer-default">
+<h3 id="daly-lets-dive-in-1"><span style="color: pink;"><strong>DALY: let’s dive in (1)</strong></span></h3>
+<ul>
+<li><strong>Mortality Contribution (YLL)</strong>:
+<ul>
+<li>Leading causes of premature death: cardiovascular disease, cancer, infectious diseases.</li>
+<li>How reductions in mortality affect overall DALY burden.</li>
+</ul></li>
+<li><strong>Morbidity Contribution (YLD)</strong>:
+<ul>
+<li>Chronic diseases like diabetes, mental health disorders, and musculoskeletal conditions.</li>
+<li>The role of disability weight in calculating burden.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="daly-lets-dive-in-2"><span style="color: pink;"><strong>DALY: let’s dive in (2)</strong></span></h3>
+<ul>
+<li><strong>Comparing YLL and YLD</strong>:
+<ul>
+<li>Some diseases cause high YLL (e.g., heart disease), while others contribute more to YLD (e.g., mental disorders, arthritis).</li>
+<li>Policy implications: balancing treatment for high-mortality vs.&nbsp;high-disability conditions.</li>
+</ul></li>
+<li><strong>Intervention Strategies</strong>:
+<ul>
+<li>Preventative measures to reduce YLL (e.g., vaccinations, tobacco control policies).</li>
+<li>Managing chronic conditions to reduce YLD (e.g., rehabilitation programs, mental health support).</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="daly-lets-dive-in-3"><span style="color: pink;"><strong>DALY: let’s dive in (3)</strong></span></h3>
+<ul>
+<li><strong>Global and Local Comparisons</strong>:
+<ul>
+<li>How DALY burden varies by income level, access to healthcare, and social determinants.</li>
+</ul></li>
+</ul>
+
+<img data-src="imgs/DALY.jpeg" width="527" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+<h3 id="daly-lets-dive-in-4"><span style="color: pink;"><strong>DALY: let’s dive in (4)</strong></span></h3>
+<ul>
+<li><strong>Note on the blackboard, example of flu in a university population</strong></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="daly-takeaways"><span style="color: pink;"><strong>DALY: takeaways</strong></span></h3>
+<ul>
+<li><strong>DALY as a Critical Metric</strong>: Essential for public health planning and resource allocation.</li>
+<li><strong>Balancing Mortality &amp; Morbidity Interventions</strong>: Addressing both premature death and quality of life impairments.</li>
+<li><strong>Health Equity Considerations</strong>: Ensuring interventions reach vulnerable populations.</li>
+<li><strong>Data-Driven Public Health Strategies</strong>: Using DALY to guide policy decisions and optimize healthcare spending.</li>
+</ul>
+</section>
+<section id="understanding-icd-9-and-icd-10-codes" class="slide level2">
+<h2><span class="circle">4</span> <span style="color: teal;"><strong>Understanding ICD-9 and ICD-10 Codes</strong></span></h2>
+<ul>
+<li><strong>What is ICD?</strong>
+<ul>
+<li>The International Classification of Diseases (ICD) is a standardized system for classifying diseases, conditions, and procedures.</li>
+<li>Maintained by the <strong>World Health Organization (WHO)</strong>, it is used for healthcare administration, epidemiology, and research.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="transitioning-from-icd9-to-icd10"><span style="color: pink;"><strong>Transitioning from ICD9 to ICD10</strong></span></h3>
+<ul>
+<li><strong>Transition from ICD-9 to ICD-10</strong>:
+<ul>
+<li>ICD-9 had <strong>~13,000 codes</strong>, while ICD-10 expanded to <strong>~68,000 codes</strong>.</li>
+<li>Greater <strong>specificity and accuracy</strong>, especially in classifying complex diseases.</li>
+<li>Improved tracking of <strong>public health trends and emerging diseases</strong>.</li>
+</ul></li>
+<li><strong>Key Differences Between ICD-9 and ICD-10</strong>:
+<ul>
+<li><strong>Specificity</strong>: ICD-10 codes provide detailed descriptions, including laterality (left vs.&nbsp;right).</li>
+<li><strong>Combination Codes</strong>: ICD-10 combines multiple conditions into a single code (e.g., <strong>diabetes with kidney disease</strong>).</li>
+<li><strong>Expanded Code Structure</strong>: ICD-10 uses <strong>alphanumeric codes (A00-Z99)</strong> compared to the numeric structure of ICD-9.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="examples-of-icd9-and-icd10-codes-1"><span style="color: pink;"><strong>Examples of ICD9 and ICD10 codes (1)</strong></span></h3>
+
+<img data-src="imgs/icd9vs10.png" width="427" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+<h3 id="examples-of-icd9-and-icd10-codes-2"><span style="color: pink;"><strong>Examples of ICD9 and ICD10 codes (2)</strong></span></h3>
+
+<img data-src="imgs/icd10.png" width="377" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+<h3 id="why-are-these-codes-important"><span style="color: pink;"><strong>Why are these codes important?</strong></span></h3>
+<ul>
+<li><p><strong>Disease Monitoring</strong>: ICD codes allow epidemiologists to <strong>track disease outbreaks</strong> (e.g., COVID-19 had its own ICD-10 codes: <strong>U07.1 for confirmed cases</strong>).</p></li>
+<li><p><strong>Healthcare Reimbursement</strong>: Ensures accurate <strong>billing and insurance claims</strong>.</p></li>
+<li><p><strong>Policy and Research</strong>: Facilitates <strong>international comparisons</strong> of health data.</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="in-class-exercise"><span style="color: pink;"><strong>In-class exercise</strong></span></h3>
+<ul>
+<li><p>Let’s look at this patient. The principal diagnosis (ICD9 code is <strong>V3000</strong>; look it up)</p></li>
+<li><p>These are secondary diagnoses - look them up - 76502, 77181, 7707, 77212, 77081, 7470, 7455, 77182, 2760, 76522, 7742, 769, 04110, 7793, 6910, 75432, 4019, 0416, 0413, 9999, 2768.</p></li>
+<li><p><em>What can we tell about this patient?</em></p></li>
+</ul>
+</section>
+<section id="sensitivity-and-specificity" class="slide level2">
+<h2><span class="circle">5</span> <span style="color: teal;"><strong>Sensitivity and Specificity</strong></span></h2>
+<ul>
+<li>Accurately diagnosing and classifying diseases is <strong>critical</strong> for effective treatment and disease tracking.</li>
+<li>Errors in classification—whether due to <strong>poor coding, faulty diagnostic tests, or reporting mistakes</strong>—can significantly impact health outcomes and policy decisions.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="sensitivity-avoiding-false-negatives"><span style="color: pink;"><strong>Sensitivity: Avoiding False Negatives</strong></span></h3>
+<ul>
+<li><strong>Sensitivity</strong> measures how well a test identifies <strong>people who actually have a disease</strong>.</li>
+<li>A <strong>highly sensitive test</strong> <span class="highlight-box">minimizes <strong>false negatives</strong></span>, meaning fewer sick people go undiagnosed.</li>
+<li>If a test has <strong>low sensitivity</strong>, it will fail to detect many cases, allowing diseases to <strong>spread unnoticed</strong>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="example-covid-19-testing-sensitivity-issues"><span style="color: pink;"><strong>Example: COVID-19 Testing Sensitivity Issues</strong></span></h3>
+<ul>
+<li>Early <strong>PCR tests</strong> for COVID-19 had <strong>sensitivity rates of 70-80%</strong>.</li>
+<li>Up to <strong>30% of infected individuals</strong> received <strong>false-negative results</strong>.</li>
+<li><strong>False negatives</strong> led to infected individuals unknowingly <strong>spreading the virus</strong>, worsening the pandemic.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="specificity-avoiding-false-positives"><span style="color: pink;"><strong>Specificity: Avoiding False Positives</strong></span></h3>
+<ul>
+<li><strong>Specificity</strong> measures how well a test excludes people who <strong>do not</strong> have the disease.</li>
+<li>A <strong>highly specific test</strong> <span class="highlight-box">minimizes <strong>false positives</strong></span>, meaning fewer healthy people are mistakenly diagnosed as sick.</li>
+<li>If a test has <strong>low specificity</strong>, people might receive <strong>unnecessary treatments</strong> for diseases they don’t actually have.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="example-false-positives-in-cancer-diagnosis"><span style="color: pink;"><strong>Example: False Positives in Cancer Diagnosis</strong></span></h3>
+<ul>
+<li><strong>Low specificity cancer screenings</strong> sometimes identify <strong>benign tumors</strong> as malignant.</li>
+<li>This leads to <strong>unnecessary biopsies and emotional distress</strong>.</li>
+<li><strong>False positives in COVID-19 antibody tests</strong> led some people to believe they were <strong>immune</strong> when they had <strong>never actually been infected</strong>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="why-sensitivity-and-specificity-matter"><span style="color: pink;"><strong>Why Sensitivity and Specificity Matter</strong></span></h3>
+<ul>
+<li><strong>False negatives</strong> can <strong>delay treatment</strong> and <strong>increase transmission</strong> of infectious diseases.</li>
+<li><strong>False positives</strong> can lead to <strong>unnecessary medical interventions</strong> and public panic.</li>
+<li>Balancing <strong>both sensitivity and specificity</strong> is crucial in <strong>public health decisions</strong>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="in-class-exercise-1"><span style="color: blue;"><strong>In-class exercise</strong></span></h3>
+
+<img data-src="imgs/class.jpg" width="377" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+<h3 id="diagnostic-test"><span style="color: blue;"><strong>Diagnostic Test</strong></span></h3>
+<ul>
+<li>Sensitivity: <strong>75%</strong> (correctly detects 75% of sick students, 25% false negatives).</li>
+<li>Specificity: <strong>90%</strong> (correctly identifies 90% of healthy students, 10% false positives).</li>
+</ul>
+
+<img data-src="imgs/covidtest.jpg" width="377" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+<h3 id="distribute-test-results"><span style="color: blue;"><strong>Distribute Test Results</strong></span></h3>
+<ul>
+<li><p>75% of sick students get a <strong>Positive</strong> test = 6</p></li>
+<li><p>25% of sick students get a <strong>Negative</strong> test = 2</p></li>
+<li><p>90% of healthy students get a <strong>Negative</strong> test.</p></li>
+<li><p>10% of healthy students get a <strong>Positive</strong> test.</p></li>
+<li><p>Each student <strong>announces</strong> their test result (“I tested positive” or “I tested negative”).</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="discussion-and-debrief"><span style="color: blue;"><strong>Discussion and debrief</strong></span></h3>
+<ul>
+<li>Ask <strong>sick students</strong> to stand and check if they were correctly diagnosed.</li>
+<li>Ask <strong>healthy students</strong> who tested positive how they feel about misdiagnosis.</li>
+<li>How did it feel to be wrongly diagnosed?</li>
+<li>What are the real-world consequences of <strong>false negatives</strong>?</li>
+<li>What are the consequences of <strong>false positives</strong>?</li>
+<li>How do public health officials handle these testing errors?</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="conclusion-why-this-matters"><span style="color: blue;"><strong>Conclusion: Why This Matters</strong></span></h3>
+<ul>
+<li>Sensitivity and specificity <strong>are never perfect</strong>.</li>
+<li><strong>False negatives</strong> can lead to disease spread.</li>
+<li><strong>False positives</strong> waste resources and create unnecessary fear.</li>
+<li><strong>Multiple tests over time</strong> improve diagnosis accuracy.</li>
+</ul>
+<div class="footer footer-default">
 
 </div>
 </section></section>
