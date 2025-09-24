@@ -8,11 +8,9 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.57">
+  <meta name="generator" content="quarto-1.3.450">
 
-  <meta name="author" content="Eric Delmelle">
-  <meta name="dcterms.date" content="2025-02-19">
-  <title>Measuring Health and Disease in Populations</title>
+  <title>Measuring Health and Disease in Populations II</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -157,8 +155,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -327,143 +324,439 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Measuring Health and Disease in Populations</h1>
+  <h1 class="title">Measuring Health and Disease in Populations II</h1>
+  <p class="subtitle">Chapter 3 <br> Eric Delmelle <br> September 23-25, 2025</p>
 
 <div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Eric Delmelle 
-</div>
-</div>
 </div>
 
-  <p class="date">2025-02-19</p>
 </section>
-<section id="introduction-to-health-measurement" class="slide level2">
-<h2>Introduction to Health Measurement</h2>
+<section class="slide level2">
+
+<style>
+.circle {
+  background-color: #FFCCCB; /* Light red background */
+  border: 2px solid teal; /* Teal border */
+  border-radius: 50%; /* Makes the circle round */
+  color: teal; /* Teal text color */
+  width: 75px; /* Circle diameter */
+  height: 75px; /* Circle diameter */
+  display: inline-block;
+  text-align: center;
+  line-height: 75px; /* Match the height to center the text vertically */
+  vertical-align: middle; /* Aligns the circle vertically with adjacent text */
+  margin-right: 5px;
+}
+</style>
+<style>
+.highlight-box {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 5px;
+}
+</style>
+<style>
+ul {
+  font-size: 85%;
+}
+
+ul ul {
+  font-size: 75%;
+}
+</style>
+
+<img data-src="imgs/ai.jpg" class="r-stretch quarto-figure-center"></section>
+<section>
+<section id="chapter-overview" class="title-slide slide level1 center">
+<h1><span style="color: blue;"><strong>Chapter Overview</strong></span></h1>
 <ul>
-<li>Understanding health indicators and indices</li>
-<li>Evaluating sources of health data</li>
-<li>Constructing summary measures of population health</li>
-<li>Sensitivity and specificity in diagnostic tests</li>
-<li>Disease surveillance and epidemic investigation</li>
-<li>Cultural influences on health assessment</li>
+<li><strong>Health Indicators and Indices</strong>: What are their characteristics and why are they important?</li>
+<li><strong>Sources and Evaluation of Health Data</strong>: Primary, secondary data, passive and active collection.</li>
+<li><strong>Disease Definition and Classification</strong>: How do we classify diseases? (ICD9, ICD10-codes)</li>
+<li><strong>Diagnostic Tests and Disease Surveillance</strong>: Is a test accurate? What about specificty and sensitivity? True Positive or False Negative?</li>
 </ul>
-<p><strong>Add Figure Here: Diagram of Population Health Measurement Framework</strong></p>
 </section>
-<section id="health-indicators-vs.-indices" class="slide level2">
-<h2>Health Indicators vs.&nbsp;Indices</h2>
+<section id="health-indicators-and-indices" class="slide level2">
+<h2><span class="circle">1</span> <span style="color: teal;"><strong>Health Indicators and Indices</strong></span></h2>
 <ul>
-<li><strong>Health Indicators</strong>: Directly measurable variables reflecting a population’s health</li>
-<li><strong>Health Indices</strong>: Composite measures combining multiple indicators</li>
-<li>Example: Infant mortality rate (indicator) vs.&nbsp;Health expectancy index (index)</li>
+<li><strong>Health Indicators</strong>: Directly measurable variables reflecting a population’s health such as infant mortality rate and life expectancy.</li>
+<li><strong>Health Indices</strong>: Composite measures combining multiple indicators to give an overview of health status, like the Human Development Index.</li>
+</ul>
+
+<img data-src="imgs/index.jpg" width="527" class="r-stretch quarto-figure-center"><ul>
+<li>See <span class="highlight-box"><strong>Box 3.1</strong></span> and <span class="highlight-box"><strong>Box 3.3</strong></span> for more details.</li>
 </ul>
 </section>
 <section class="slide level2">
 
-<p><strong>Table: Common Health Indicators</strong> | Indicator | Measurement | |———–|————-| | Life expectancy | Years of expected life | | Infant mortality rate | Deaths per 1,000 live births | | Disability-adjusted life years (DALYs) | Years lost due to ill-health |</p>
-<p><strong>Add Figure Here: Graph comparing different health indicators globally</strong></p>
-<p><strong>Reflection Question:</strong> How do health indicators differ across developed and developing nations? What factors contribute to these differences?</p>
-</section>
-<section id="evaluating-health-data-sources" class="slide level2">
-<h2>Evaluating Health Data Sources</h2>
-<p><strong>Primary Data Sources</strong> - Population surveys - Surveillance systems - Health care records</p>
-<p><strong>Secondary Data Sources</strong> - Census data - Disease registries - Health administrative databases</p>
-<p><strong>Key Attributes of Reliable Data</strong> 1. <strong>Validity</strong>: Measures what it is supposed to measure 2. <strong>Reliability</strong>: Consistent results across studies 3. <strong>Feasibility</strong>: Can be collected efficiently 4. <strong>Universality</strong>: Applies across different populations</p>
-<p><strong>Reflection Question:</strong> What are some ethical concerns related to health data collection and privacy? How can we ensure data accuracy while respecting individual rights?</p>
-</section>
-<section id="summary-measures-of-population-health" class="slide level2">
-<h2>Summary Measures of Population Health</h2>
+<h3 id="evaluating-health-indicators"><span style="color: pink;"><strong>Evaluating Health Indicators</strong></span></h3>
 <ul>
-<li><strong>Quality-Adjusted Life Years (QALY)</strong>: Adjusts life expectancy based on quality of health</li>
-<li><strong>Disability-Adjusted Life Years (DALY)</strong>: Measures disease burden combining morbidity and mortality</li>
-<li><strong>Healthy Life Expectancy (HALE)</strong>: Number of years a person can expect to live in full health</li>
+<li>How are health indicators used to monitor and assess population health, informing public health decisions and policy-making?</li>
 </ul>
-<p><strong>Add Figure Here: Flowchart of how DALY and QALY are calculated</strong></p>
-<p><strong>Reflection Question:</strong> How do different measures like DALY and QALY help policymakers allocate healthcare resources?</p>
+<div class="columns">
+<div class="column" style="font-size: 24px; line-height: 1.2;">
+<h4 style="color: blue;" id="essential-qualities">Essential Qualities</h4>
+<ul>
+<li><strong>Reliability/Reproducibility</strong>: Consistent results across studies and time.</li>
+<li><strong>Validity</strong>: Accurately measures what it is intended to measure.</li>
+<li><strong>Sensitivity</strong>: Detects changes or differences that are meaningful.</li>
+</ul>
+</div><div class="column" style="font-size: 24px; line-height: 1.2;">
+<h4 style="color: blue;" id="practical-qualities">Practical Qualities</h4>
+<ul>
+<li><strong>Acceptability</strong>: Acceptable to those who are assessed by the indicator.</li>
+<li><strong>Feasibility</strong>: Can be realistically collected and sustained.</li>
+<li><strong>Universality</strong>: Applicable across different settings and populations.</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="sensitivity-and-specificity-in-screening" class="slide level2">
-<h2>Sensitivity and Specificity in Screening</h2>
+<section id="sources-and-quality-of-health-data" class="slide level2">
+<h2><span class="circle">2</span> <span style="color: teal;"><strong>Sources and quality of health data</strong></span></h2>
 <ul>
-<li><strong>Sensitivity</strong>: Ability of a test to correctly identify those with the disease (True Positive Rate)</li>
-<li><strong>Specificity</strong>: Ability of a test to correctly identify those without the disease (True Negative Rate)</li>
-<li><strong>Predictive Values</strong>:
+<li>See <span class="highlight-box"><strong>Table 3.1</strong></span> -sources of data to compilate indicators.</li>
+<li>Health data sources are crucial for compiling health indicators.</li>
+<li>Data can originate from individuals, healthcare providers, or be generated through health surveys and administrative databases.</li>
+</ul>
+<h3 id="active-or-passive"><span style="color: pink;"><strong>Active or passive?</strong></span></h3>
 <ul>
-<li>Positive Predictive Value (PPV): Probability that a positive test result is accurate</li>
-<li>Negative Predictive Value (NPV): Probability that a negative test result is accurate</li>
+<li><strong>Active Data Sources</strong>: Require efforts to solicit and collect information, e.g., health surveys.</li>
+<li><strong>Passive Data Sources</strong>: Routinely submitted by other entities, e.g., vital statistics.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="primary-and-secondary-data-sources"><span style="color: pink;"><strong>Primary and Secondary Data Sources</strong></span></h3>
+<ul>
+<li><p><strong>Primary Data Sources</strong>: Specifically collected for the purpose of health monitoring (e.g.&nbsp;disease registries and some health surveys).</p>
+<ul>
+<li><strong>Electronic Health Records (EHR)</strong>: Detailed, real-time, patient-centered records.</li>
+<li><strong>Disease Registries</strong>: Used to estimate disease incidence and prevalence, like cancer registries.</li>
+</ul></li>
+<li><p><strong>Secondary Data Sources</strong>: Originally designed for other purposes but also used in health monitoring (e.g.administrative databases for Medicare and Medicaid).</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="health-information-system-his"><span style="color: pink;"><strong>Health Information System (HIS)</strong></span></h3>
+<ul>
+<li><p>An organized set of activities whose purpose is to <strong>gather, maintain, and provide health-related information</strong> to improve health outcomes.</p></li>
+<li><p>Components:</p>
+<ul>
+<li>Disease registries</li>
+<li>Utilization databases</li>
+<li>National health surveys</li>
 </ul></li>
 </ul>
-<p><strong>Add Figure Here: Confusion matrix for diagnostic tests</strong></p>
-<p><strong>Reflection Question:</strong> What are some real-world examples of how inaccurate screening tests impact public health policies and individual health decisions?</p>
-</section>
-<section id="disease-surveillance-epidemic-investigation" class="slide level2">
-<h2>Disease Surveillance &amp; Epidemic Investigation</h2>
-<h3 id="steps-in-epidemic-investigation">Steps in Epidemic Investigation</h3>
-<ol type="1">
-<li><strong>Identify and confirm the outbreak</strong></li>
-<li><strong>Establish case definitions</strong></li>
-<li><strong>Conduct descriptive epidemiology</strong></li>
-<li><strong>Develop and test hypotheses</strong></li>
-<li><strong>Implement control and prevention measures</strong></li>
-<li><strong>Communicate findings</strong></li>
-</ol>
-<h3 id="example-covid-19-surveillance">Example: COVID-19 Surveillance</h3>
-<ul>
-<li>Tracking confirmed cases and mortality rates</li>
-<li>Evaluating interventions such as lockdowns and vaccinations</li>
-<li>Monitoring changes in variant strains</li>
-</ul>
-<p><strong>Add Figure Here: Graph of epidemic curve during past pandemics</strong></p>
-<p><strong>Reflection Question:</strong> What lessons did we learn from COVID-19 in terms of global health surveillance and emergency response?</p>
-</section>
-<section id="cultural-and-social-considerations-in-health-measurement" class="slide level2">
-<h2>Cultural and Social Considerations in Health Measurement</h2>
-<ul>
-<li>Different societies define health and disease differently</li>
-<li>Traditional healing practices may influence data reporting</li>
-<li>Perceptions of illness impact willingness to seek care</li>
-<li>Example: Mental health stigma affecting diagnosis rates</li>
-</ul>
-<p><strong>Reflection Question:</strong> How can cultural competence improve the accuracy of health data collection and interpretation?</p>
-</section>
-<section id="ethical-considerations-in-health-measurement" class="slide level2">
-<h2>Ethical Considerations in Health Measurement</h2>
-<ul>
-<li>Privacy concerns in health data collection</li>
-<li>Bias in health metrics (e.g., racial/ethnic disparities)</li>
-<li>Ethical issues in screening and diagnosis (e.g., false positives leading to unnecessary treatment)</li>
-</ul>
-<p><strong>Reflection Question:</strong> What are the responsibilities of researchers in ensuring fair and unbiased health measurements?</p>
-</section>
-<section id="the-role-of-ai-big-data-in-health-surveillance" class="slide level2">
-<h2>The Role of AI &amp; Big Data in Health Surveillance</h2>
-<ul>
-<li>AI in disease prediction and outbreak modeling</li>
-<li>Electronic health records (EHR) for real-time data collection</li>
-<li>Potential biases and ethical concerns in AI-driven health assessments</li>
-</ul>
-<p><strong>Add Figure Here: Diagram of AI applications in health data analysis</strong></p>
-<p><strong>Reflection Question:</strong> How can AI help address health disparities, and what risks should we be cautious of?</p>
-</section>
-<section id="conclusion" class="slide level2">
-<h2>Conclusion</h2>
-<ul>
-<li>Measuring health and disease is foundational to public health planning</li>
-<li>Data quality and reliability are crucial for decision-making</li>
-<li>Cultural and social factors must be considered in health assessments</li>
-<li>Continued advancements in health informatics enhance measurement accuracy</li>
-</ul>
-<p><strong>Final Reflection Questions:</strong> 1. What are the limitations of using DALY as a health measure? 2. How can health indicators be used to inform public health policy? 3. How does the specificity of a test impact public health decision-making? 4. How can health measurement frameworks be adapted to better capture social determinants of health?</p>
 </section>
 <section class="slide level2">
 
-<p><strong>Next Session: Epidemiologic Models and Determinants of Population Health</strong></p>
-<div class="quarto-auto-generated-content">
+<h3 id="disease-registries-and-notifiable-diseases"><span style="color: pink;"><strong>Disease Registries and Notifiable Diseases</strong></span></h3>
+<ul>
+<li><strong>Disease Registries</strong>
+<ul>
+<li>Important for estimating disease incidence and prevalence.</li>
+<li>Cover various conditions from cancer to communicable diseases.</li>
+</ul></li>
+<li><strong>Notifiable Diseases</strong>
+<ul>
+<li>Diseases that must be reported to national health authorities.</li>
+<li>Managed by systems like the CDC’s National Notifiable Diseases Surveillance System.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="utilization-of-health-data"><span style="color: pink;"><strong>Utilization of Health Data</strong></span></h3>
+<ul>
+<li><strong>Measuring Health Service Utilization</strong>
+<ul>
+<li>Utilization data from Medicare, Medicaid, and health maintenance organizations provide insights into health service use.</li>
+</ul></li>
+<li><strong>Health Surveys</strong>
+<ul>
+<li>Gather data on health behaviors, practices, and perceptions.</li>
+<li>Vary by mode of interview and can be influenced by respondents’ perceptions and recall accuracy.</li>
+<li>See <span class="highlight-box"><strong>Table 3.2</strong></span> for pros and cons of survey type</li>
+<li>Cross-section (versus longitudinal)</li>
+<li>Likert scale!</li>
+<li>Self-rated survey
+<ul>
+<li>Surprisingly good (dynamic)</li>
+</ul></li>
+<li>QOL - see the one for <a href="https://mcmap.org/qol/">Charlotte, NC</a></li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="linking-health-data"><span style="color: pink;"><strong>Linking health data</strong></span></h3>
+<ul>
+<li><p><strong>Enhanced Insights</strong>: Linking different data sources can provide a more comprehensive view of health outcomes.</p></li>
+<li><p><strong>Examples of Linked Data</strong>: Combining EHRs with national health surveys or insurance claim data.</p></li>
+<li><p><strong>Data Challenges</strong></p>
+<ul>
+<li><strong>Data Integrity and Privacy</strong>: Managing the accuracy and confidentiality of linked data is paramount.
+<ul>
+<li><span style="color: red;"><strong>HIPAA!</strong></span></li>
+<li><a href="https://biospecimens.cancer.gov/resources/sops/docs/GTEx_SOPs/BBRB-ER-0001-F1%20List%20of%20HIPAA%20Identifiers.pdf">List of HIPAA identifiers</a></li>
+</ul></li>
+<li><strong>Analytical Complexity</strong>: The use of linked data often requires advanced statistical techniques to manage biases and variability.</li>
+</ul></li>
+</ul>
+</section>
+<section id="summary-measures-of-population-health" class="slide level2">
+<h2><span class="circle">3</span> <span style="color: teal;"><strong>Summary measures of population health</strong></span></h2>
+<h3 id="integrating-mortality-and-morbidity"><span style="color: pink;"><strong>Integrating Mortality and Morbidity</strong></span></h3>
+<ul>
+<li>Health indices like DFLE, DALE, DALY, HALE, QALY, and HLY combine measures of mortality with morbidity or disability into a single comprehensive figure.</li>
+<li>These measures differ in how they account for morbidity:
+<ul>
+<li>Activities of daily living</li>
+<li>Self-rated health</li>
+<li>Activity limitations (institutional and non-institutional)</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="quality-adjusted-life-years-qaly"><span style="color: pink;"><strong>Quality-Adjusted Life Years (QALY)</strong></span></h3>
+<ul>
+<li><p><strong>Definition</strong>: A measure that combines the length of life with the quality of life in a single index number.</p></li>
+<li><p><strong>Calculation</strong>: Each year in perfect health is counted as one QALY, while years lived with illness or disability are adjusted according to the severity of the health condition.</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="disability-adjusted-life-years-daly"><span style="color: pink;"><strong>Disability-Adjusted Life Years (DALY)</strong></span></h3>
+<ul>
+<li><strong>Definition of DALY</strong>: A measure that combines mortality (Years of Life Lost, YLL) and morbidity (Years Lived with Disability, YLD) into a single metric.</li>
+<li><strong>Why DALY Matters</strong>: Helps policymakers understand the burden of disease and prioritize interventions effectively.</li>
+<li><strong>Components of DALY</strong>:
+<ul>
+<li><strong>YLL (Years of Life Lost)</strong>: Premature death due to specific causes.</li>
+<li><strong>YLD (Years Lived with Disability)</strong>: The impact of non-fatal health conditions on quality of life.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="daly-lets-dive-in-1"><span style="color: pink;"><strong>DALY: let’s dive in (1)</strong></span></h3>
+<ul>
+<li><strong>Mortality Contribution (YLL)</strong>:
+<ul>
+<li>Leading causes of premature death: cardiovascular disease, cancer, infectious diseases.</li>
+<li>How reductions in mortality affect overall DALY burden.</li>
+</ul></li>
+<li><strong>Morbidity Contribution (YLD)</strong>:
+<ul>
+<li>Chronic diseases like diabetes, mental health disorders, and musculoskeletal conditions.</li>
+<li>The role of disability weight in calculating burden.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="daly-lets-dive-in-2"><span style="color: pink;"><strong>DALY: let’s dive in (2)</strong></span></h3>
+<ul>
+<li><strong>Comparing YLL and YLD</strong>:
+<ul>
+<li>Some diseases cause high YLL (e.g., heart disease), while others contribute more to YLD (e.g., mental disorders, arthritis).</li>
+<li>Policy implications: balancing treatment for high-mortality vs.&nbsp;high-disability conditions.</li>
+</ul></li>
+<li><strong>Intervention Strategies</strong>:
+<ul>
+<li>Preventative measures to reduce YLL (e.g., vaccinations, tobacco control policies).</li>
+<li>Managing chronic conditions to reduce YLD (e.g., rehabilitation programs, mental health support).</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="daly-lets-dive-in-3"><span style="color: pink;"><strong>DALY: let’s dive in (3)</strong></span></h3>
+<ul>
+<li><strong>Global and Local Comparisons</strong>:
+<ul>
+<li>How DALY burden varies by income level, access to healthcare, and social determinants.</li>
+</ul></li>
+</ul>
+
+<img data-src="imgs/DALY.jpeg" width="527" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+<h3 id="daly-lets-dive-in-4"><span style="color: pink;"><strong>DALY: let’s dive in (4)</strong></span></h3>
+<ul>
+<li><strong>Note on the blackboard, example of flu in a university population</strong></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="daly-takeaways"><span style="color: pink;"><strong>DALY: takeaways</strong></span></h3>
+<ul>
+<li><strong>DALY as a Critical Metric</strong>: Essential for public health planning and resource allocation.</li>
+<li><strong>Balancing Mortality &amp; Morbidity Interventions</strong>: Addressing both premature death and quality of life impairments.</li>
+<li><strong>Health Equity Considerations</strong>: Ensuring interventions reach vulnerable populations.</li>
+<li><strong>Data-Driven Public Health Strategies</strong>: Using DALY to guide policy decisions and optimize healthcare spending.</li>
+</ul>
+</section>
+<section id="understanding-icd-9-and-icd-10-codes" class="slide level2">
+<h2><span class="circle">4</span> <span style="color: teal;"><strong>Understanding ICD-9 and ICD-10 Codes</strong></span></h2>
+<ul>
+<li><strong>What is ICD?</strong>
+<ul>
+<li>The International Classification of Diseases (ICD) is a standardized system for classifying diseases, conditions, and procedures.</li>
+<li>Maintained by the <strong>World Health Organization (WHO)</strong>, it is used for healthcare administration, epidemiology, and research.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="transitioning-from-icd9-to-icd10"><span style="color: pink;"><strong>Transitioning from ICD9 to ICD10</strong></span></h3>
+<ul>
+<li><strong>Transition from ICD-9 to ICD-10</strong>:
+<ul>
+<li>ICD-9 had <strong>~13,000 codes</strong>, while ICD-10 expanded to <strong>~68,000 codes</strong>.</li>
+<li>Greater <strong>specificity and accuracy</strong>, especially in classifying complex diseases.</li>
+<li>Improved tracking of <strong>public health trends and emerging diseases</strong>.</li>
+</ul></li>
+<li><strong>Key Differences Between ICD-9 and ICD-10</strong>:
+<ul>
+<li><strong>Specificity</strong>: ICD-10 codes provide detailed descriptions, including laterality (left vs.&nbsp;right).</li>
+<li><strong>Combination Codes</strong>: ICD-10 combines multiple conditions into a single code (e.g., <strong>diabetes with kidney disease</strong>).</li>
+<li><strong>Expanded Code Structure</strong>: ICD-10 uses <strong>alphanumeric codes (A00-Z99)</strong> compared to the numeric structure of ICD-9.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="examples-of-icd9-and-icd10-codes-1"><span style="color: pink;"><strong>Examples of ICD9 and ICD10 codes (1)</strong></span></h3>
+
+<img data-src="imgs/icd9vs10.png" width="427" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+<h3 id="examples-of-icd9-and-icd10-codes-2"><span style="color: pink;"><strong>Examples of ICD9 and ICD10 codes (2)</strong></span></h3>
+
+<img data-src="imgs/icd10.png" width="377" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+<h3 id="why-are-these-codes-important"><span style="color: pink;"><strong>Why are these codes important?</strong></span></h3>
+<ul>
+<li><p><strong>Disease Monitoring</strong>: ICD codes allow epidemiologists to <strong>track disease outbreaks</strong> (e.g., COVID-19 had its own ICD-10 codes: <strong>U07.1 for confirmed cases</strong>).</p></li>
+<li><p><strong>Healthcare Reimbursement</strong>: Ensures accurate <strong>billing and insurance claims</strong>.</p></li>
+<li><p><strong>Policy and Research</strong>: Facilitates <strong>international comparisons</strong> of health data.</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="in-class-exercise"><span style="color: pink;"><strong>In-class exercise</strong></span></h3>
+<ul>
+<li><p>Let’s look at this patient. The principal diagnosis (ICD9 code is <strong>V3000</strong>; look it up)</p></li>
+<li><p>These are secondary diagnoses - look them up - 76502, 77181, 7707, 77212, 77081, 7470, 7455, 77182, 2760, 76522, 7742, 769, 04110, 7793, 6910, 75432, 4019, 0416, 0413, 9999, 2768.</p></li>
+<li><p><em>What can we tell about this patient?</em></p></li>
+</ul>
+</section>
+<section id="sensitivity-and-specificity" class="slide level2">
+<h2><span class="circle">5</span> <span style="color: teal;"><strong>Sensitivity and Specificity</strong></span></h2>
+<ul>
+<li>Accurately diagnosing and classifying diseases is <strong>critical</strong> for effective treatment and disease tracking.</li>
+<li>Errors in classification—whether due to <strong>poor coding, faulty diagnostic tests, or reporting mistakes</strong>—can significantly impact health outcomes and policy decisions.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="sensitivity-avoiding-false-negatives"><span style="color: pink;"><strong>Sensitivity: Avoiding False Negatives</strong></span></h3>
+<ul>
+<li><strong>Sensitivity</strong> measures how well a test identifies <strong>people who actually have a disease</strong>.</li>
+<li>A <strong>highly sensitive test</strong> <span class="highlight-box">minimizes <strong>false negatives</strong></span>, meaning fewer sick people go undiagnosed.</li>
+<li>If a test has <strong>low sensitivity</strong>, it will fail to detect many cases, allowing diseases to <strong>spread unnoticed</strong>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="example-covid-19-testing-sensitivity-issues"><span style="color: pink;"><strong>Example: COVID-19 Testing Sensitivity Issues</strong></span></h3>
+<ul>
+<li>Early <strong>PCR tests</strong> for COVID-19 had <strong>sensitivity rates of 70-80%</strong>.</li>
+<li>Up to <strong>30% of infected individuals</strong> received <strong>false-negative results</strong>.</li>
+<li><strong>False negatives</strong> led to infected individuals unknowingly <strong>spreading the virus</strong>, worsening the pandemic.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="specificity-avoiding-false-positives"><span style="color: pink;"><strong>Specificity: Avoiding False Positives</strong></span></h3>
+<ul>
+<li><strong>Specificity</strong> measures how well a test excludes people who <strong>do not</strong> have the disease.</li>
+<li>A <strong>highly specific test</strong> <span class="highlight-box">minimizes <strong>false positives</strong></span>, meaning fewer healthy people are mistakenly diagnosed as sick.</li>
+<li>If a test has <strong>low specificity</strong>, people might receive <strong>unnecessary treatments</strong> for diseases they don’t actually have.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="example-false-positives-in-cancer-diagnosis"><span style="color: pink;"><strong>Example: False Positives in Cancer Diagnosis</strong></span></h3>
+<ul>
+<li><strong>Low specificity cancer screenings</strong> sometimes identify <strong>benign tumors</strong> as malignant.</li>
+<li>This leads to <strong>unnecessary biopsies and emotional distress</strong>.</li>
+<li><strong>False positives in COVID-19 antibody tests</strong> led some people to believe they were <strong>immune</strong> when they had <strong>never actually been infected</strong>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="why-sensitivity-and-specificity-matter"><span style="color: pink;"><strong>Why Sensitivity and Specificity Matter</strong></span></h3>
+<ul>
+<li><strong>False negatives</strong> can <strong>delay treatment</strong> and <strong>increase transmission</strong> of infectious diseases.</li>
+<li><strong>False positives</strong> can lead to <strong>unnecessary medical interventions</strong> and public panic.</li>
+<li>Balancing <strong>both sensitivity and specificity</strong> is crucial in <strong>public health decisions</strong>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="in-class-exercise-1"><span style="color: blue;"><strong>In-class exercise</strong></span></h3>
+
+<img data-src="imgs/class.jpg" width="377" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+<h3 id="diagnostic-test"><span style="color: blue;"><strong>Diagnostic Test</strong></span></h3>
+<ul>
+<li>Sensitivity: <strong>75%</strong> (correctly detects 75% of sick students, 25% false negatives).</li>
+<li>Specificity: <strong>90%</strong> (correctly identifies 90% of healthy students, 10% false positives).</li>
+</ul>
+
+<img data-src="imgs/covidtest.jpg" width="377" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+<h3 id="distribute-test-results"><span style="color: blue;"><strong>Distribute Test Results</strong></span></h3>
+<ul>
+<li><p>75% of sick students get a <strong>Positive</strong> test = 6</p></li>
+<li><p>25% of sick students get a <strong>Negative</strong> test = 2</p></li>
+<li><p>90% of healthy students get a <strong>Negative</strong> test.</p></li>
+<li><p>10% of healthy students get a <strong>Positive</strong> test.</p></li>
+<li><p>Each student <strong>announces</strong> their test result (“I tested positive” or “I tested negative”).</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="discussion-and-debrief"><span style="color: blue;"><strong>Discussion and debrief</strong></span></h3>
+<ul>
+<li>Ask <strong>sick students</strong> to stand and check if they were correctly diagnosed.</li>
+<li>Ask <strong>healthy students</strong> who tested positive how they feel about misdiagnosis.</li>
+<li>How did it feel to be wrongly diagnosed?</li>
+<li>What are the real-world consequences of <strong>false negatives</strong>?</li>
+<li>What are the consequences of <strong>false positives</strong>?</li>
+<li>How do public health officials handle these testing errors?</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="conclusion-why-this-matters"><span style="color: blue;"><strong>Conclusion: Why This Matters</strong></span></h3>
+<ul>
+<li>Sensitivity and specificity <strong>are never perfect</strong>.</li>
+<li><strong>False negatives</strong> can lead to disease spread.</li>
+<li><strong>False positives</strong> waste resources and create unnecessary fear.</li>
+<li><strong>Multiple tests over time</strong> improve diagnosis accuracy.</li>
+</ul>
 <div class="footer footer-default">
 
 </div>
-</div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -490,6 +783,7 @@ Eric Delmelle
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -706,7 +1000,18 @@ Eric Delmelle
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -738,50 +1043,11 @@ Eric Delmelle
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-          }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -791,17 +1057,8 @@ Eric Delmelle
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -815,11 +1072,7 @@ Eric Delmelle
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
+          return note.innerHTML;
         });
       }
       const findCites = (el) => {
