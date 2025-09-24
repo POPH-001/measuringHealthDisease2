@@ -4,4 +4,4 @@
 - Constructing summary measures of population health
 - Sensitivity and specificity in diagnostic tests 
 - Disease surveillance and epidemic investigation 
-- Cultural influences on health assessment
+

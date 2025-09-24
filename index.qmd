@@ -1,6 +1,6 @@
 ---
 title: "Measuring Health and Disease in Populations II"
-subtitle: "Chapter 3 <br> Eric Delmelle <br> September 23-25, 2025"
+subtitle: "Chapter 3 <br> Eric Delmelle <br> September 25 & 30 2025"
 format: revealjs
 ---
 
@@ -160,7 +160,7 @@ ul ul {
 
     -   **Data Integrity and Privacy**: Managing the accuracy and confidentiality of linked data is paramount.
         -   [**HIPAA!**]{style="color: red;"}
-        -   [List of HIPAA identifiers](https://biospecimens.cancer.gov/resources/sops/docs/GTEx_SOPs/BBRB-ER-0001-F1%20List%20of%20HIPAA%20Identifiers.pdf)
+        -   [List of HIPAA identifiers](https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html)
     -   **Analytical Complexity**: The use of linked data often requires advanced statistical techniques to manage biases and variability.
 
 ------------------------------------------------------------------------
@@ -224,11 +224,6 @@ ul ul {
 
 ![](imgs/DALY.jpeg){fig-align="center" width="527"}
 
-------------------------------------------------------------------------
-
-### [**DALY: let's dive in (4)**]{style="color: pink;"}
-
--   **Note on the blackboard, example of flu in a university population**
 
 ------------------------------------------------------------------------
 
